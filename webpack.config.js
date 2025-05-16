@@ -1,5 +1,6 @@
 const path = require("path")
 const HtmlWebpackPlugin = require("html-webpack-plugin")
+const CopyWebPackPlugin = require("copy-webpack-plugin")
 
 module.exports = {
     target: "web",
@@ -27,13 +28,22 @@ module.exports = {
             template: path.resolve(__dirname,"hairday-template-main","index.html"),
             favicon: path.resolve("hairday-template-main","src","assets","scissors.svg"),   
         }),
-    
+        
+        new CopyWebPackPlugin({
+                patterns: [{
+                    from: path.resolve(__dirname,"hairday-template-main","src","assets"),
+                    to: path.resolve(__dirname,"dist","src","assets"),
+                }],
+        }),
     ],
 
     module:{
         rules:[{
             test: /\.css$/,
-            user: ["style-loader","css-loader"],
+            use: ["style-loader","css-loader"],
         }],
     },
+
+
+
 }
