@@ -26,7 +26,7 @@ eval("module.exports = __webpack_require__.p + \"3ed99243f708a649d7dc.svg\";\n\n
   \*******************************************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _styles_global_css__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./styles/global.css */ \"./hairday-template-main/src/styles/global.css\");\n/* harmony import */ var _styles_form_css__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./styles/form.css */ \"./hairday-template-main/src/styles/form.css\");\n/* harmony import */ var _styles_schedule_css__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./styles/schedule.css */ \"./hairday-template-main/src/styles/schedule.css\");\n\r\n \r\n//importar o CSS\r\n;\r\n\r\n\n\n//# sourceURL=webpack://haiday/./hairday-template-main/src/main.js?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _styles_global_css__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./styles/global.css */ \"./hairday-template-main/src/styles/global.css\");\n/* harmony import */ var _styles_form_css__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./styles/form.css */ \"./hairday-template-main/src/styles/form.css\");\n/* harmony import */ var _styles_schedule_css__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./styles/schedule.css */ \"./hairday-template-main/src/styles/schedule.css\");\n\n\n//importar o CSS\n\n\n\n\n//# sourceURL=webpack://haiday/./hairday-template-main/src/main.js?");
 
 /***/ }),
 
