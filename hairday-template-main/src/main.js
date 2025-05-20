@@ -4,3 +4,7 @@
 import "./styles/global.css"
 import "./styles/form.css"
 import "./styles/schedule.css"
+
+//importando a configuracao do dayjs
+
+import "./libs/dayjs.js"
