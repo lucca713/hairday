@@ -1,5 +1,5 @@
 "use strict"
- 
+
 //importar o CSS
 import "./styles/global.css"
 import "./styles/form.css"
@@ -11,4 +11,4 @@ import "./libs/dayjs.js"
 
 //js
 import "./modules/form/submit.js"
-import "./modules/load.js"
+import "./modules/page_load.js"
