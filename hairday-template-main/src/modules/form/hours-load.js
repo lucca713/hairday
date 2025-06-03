@@ -1,5 +1,6 @@
 //importar os horarios de abertura
 import { openingHours } from "../../utils/opening_hours.js"
+import { hoursClick } from "./hours-click.js"
 
 import dayjs from "dayjs";
 
@@ -27,7 +28,7 @@ export function hoursLoad({ date }){
         const li = document.createElement("li")
         li.classList.add("hour")
         li.classList.add(available ? "hour-available" : "hour-unavailable")
-
+//hour-available
         li.textContent = hour
 
         if(hour === "9:00"){
@@ -41,6 +42,7 @@ export function hoursLoad({ date }){
         
         hours.append(li)
     })
+
     //Evento de clicnk nos horarios disponiveis
     hoursClick()
 }
