@@ -1,5 +1,6 @@
 //importar os horarios de abertura
 import { openingHours } from "../../utils/opening_hours.js"
+
 import dayjs from "dayjs";
 
 const hours = document.getElementById("hours")
@@ -37,14 +38,17 @@ export function hoursLoad({ date }){
             hourHeaderAdd("Noite")
         }
 
+        
         hours.append(li)
     })
+    //Evento de clicnk nos horarios disponiveis
+    hoursClick()
 }
 
 function hourHeaderAdd(title){
     const header = document.createElement("li")
     header.classList.add("hour-period")
     header.textContent = title
-
+    
     hours.append(header) // se der bo é aqui nas horas 
 }
