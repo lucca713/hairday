@@ -8,6 +8,9 @@ const hours = document.getElementById("hours")
 
 export function hoursLoad({ date }){
 
+    //limpar a tela ao carregar um novo dia
+    hours.innerHTML = ""
+
     const opening = openingHours.map((hour) =>{
     
         const [scheduleHour] = hour.split(":") //quebra a list ade horas no : 

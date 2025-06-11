@@ -12,3 +12,4 @@ import "./libs/dayjs.js"
 //js
 import "./modules/form/submit.js"
 import "./modules/page_load.js"
+import "./modules/form/date-change.js"
