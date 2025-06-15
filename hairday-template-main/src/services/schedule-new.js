@@ -3,7 +3,8 @@ import { apiConfig } from "./api-config.js"
 export async function scheduleNew({id, name, when}){
 
     try{
-        await fetch(`${apiConfig.baseURL}/schedules}`,{
+        //facoa requisicao para enviar os novos agendamentos
+        await fetch(`${apiConfig.baseURL}/schedules`,{
             method: 'POST',
 
             headers:{

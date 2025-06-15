@@ -45,7 +45,7 @@ form.onsubmit = async (event) => {
             {
                 id,
                 name,
-                when
+                when,
             }
         )
 
