@@ -1,11 +1,11 @@
 //isso para usar api e buscar por dia
 import dayjs from "dayjs"
-import { apiConfig } from "./api-config.js"
+import { apiConfig } from "./api-config"
 //import { scheduleNew } from "./schedule-new"
 export async function scheduleFetchByDay({date}){
     try{
         //fazendo a riquisicao.
-    const response = await fetch(`${apiConfig.baseURL}/schedule`)
+    const response = await fetch(`${apiConfig.baseURL}/schedules`)
 
     //transforma os agendamentos em formato json
     const data = await response.json()
