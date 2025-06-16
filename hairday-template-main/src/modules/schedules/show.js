@@ -9,8 +9,14 @@ const periodNight = document.getElementById("period-night")
 
 export function schedulesShow({dailySchedules}){
     try{
-
+        //limpo as listas 
+        periodMorning.innerHTML = ""
         
+        //renderizar agendamentos por periodo
+        dailySchedules.array.forEach(element => {
+            const item = document.createElement("li")
+            const time =  document.createElement()
+        });
 
     }catch(error){
         console.log(error)
