@@ -15,7 +15,16 @@ export function schedulesShow({dailySchedules}){
         //renderizar agendamentos por periodo
         dailySchedules.array.forEach(element => {
             const item = document.createElement("li")
-            const time =  document.createElement()
+            const time =  document.createElement("strong")
+            const name = document.createElement("span")
+            
+            //adicionar o id do agendamento
+            item.setAttribute("dataid", schedule.id)
+
+            time.textContent = dayjs(schedule.when).format("HH:mm")
+
+            name.textContent = schedule.name
+
         });
 
     }catch(error){

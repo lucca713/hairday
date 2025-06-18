@@ -8,7 +8,7 @@ export async function schedulesDays(){
 
     //buscar na api os agendamentos
         const dailySchedules = await scheduleFetchByDay({date})
-        console.log(dailySchecules)
+        
     
     //exibe os agendamentos
         schedulesShow({dailySchedules})
