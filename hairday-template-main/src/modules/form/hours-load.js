@@ -1,15 +1,18 @@
 //importar os horarios de abertura
 import { openingHours } from "../../utils/opening_hours.js"
+import { schedulesDays } from "../schedules/load.js";
 import { hoursClick } from "./hours-click.js"
 
 import dayjs from "dayjs";
 
 const hours = document.getElementById("hours")
 
-export function hoursLoad({ date }){
+export function hoursLoad({ date, dailySchedules }){
 
     //limpar a tela ao carregar um novo dia
     hours.innerHTML = ""
+
+    const unavailableHours = dailySchedules.map((schedule)=> dayjs(schedule.when).format("HH:mm"))
 
     const opening = openingHours.map((hour) =>{
     
@@ -19,11 +22,12 @@ export function hoursLoad({ date }){
         //devolve um bool para cada hora de acordo com o relogio
         const isHourFuture = dayjs(date).add(scheduleHour, "hour").isAfter(dayjs())
         
+        const available = !unavailableHours.includes(hour) || !isHourFuture
 
         //definir se o horario esta vago
         return{   
             hour,
-            available : isHourFuture,
+            available,
         }
     })
     //console.log(opening)
